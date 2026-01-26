@@ -3,5 +3,10 @@
     <string name="error_network">Network error. Please check your connection.</string>
     <string name="error_generic">Something went wrong. Please try again.</string>
     <string name="error_no_data">No articles found.</string>
-
+    <string name="retry">Retry</string>
+    <string name="news_list_title">Top Headlines</string>
+    <string name="article_detail_title">Article Details</string>
+    <string name="published_at">Published: %s</string>
+    <string name="source">Source: %s</string>
+    <string name="read_more">Read More</string>
 </resources>
