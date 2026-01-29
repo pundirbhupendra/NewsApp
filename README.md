@@ -44,8 +44,14 @@ UI (Jetpack Compose)
 └─────────────┘     └──────────────┘
 ```
 
-### Tools & Libraries
+📸 Screenshots
+<p align="left">
+  <img src="screenshots/screen1.png" alt="Top Headlines Screen" width="300"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/screen2.png" alt="Article Details Screen" width="300"/>
+</p>
 
+### Tools & Libraries
 * **JUnit 4** – Unit testing framework
 * **Turbine** – Flow and StateFlow testing
 * **kotlinx‑coroutines‑test** – Coroutine control
