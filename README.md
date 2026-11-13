@@ -2,16 +2,18 @@
 
 A **production‑ready Android News application** built with **Kotlin** and **Jetpack Compose**, designed to demonstrate **modern Android architecture**, **offline‑first data strategies**, and **industry‑standard testing practices**.
 
-This project reflects how a real‑world Android app is structured, built, and tested in 2026.
+This project reflects how a real‑world Android app is structured, built, and tested
 
 ## ✨ Key Features
 
 * 📱 **Single‑Activity Architecture** using Jetpack Compose
+* 🤖 **AI Features** - Smart article summaries powered by **Vertex AI (Gemini 1.5 Flash)**
 * 🏗️ **MVVM Architecture** with strict separation of concerns
 * 🔄 **Reactive UI** powered by `StateFlow`
 * 🌐 **Offline‑First Design** with Room caching and network refresh
-* 🎨 **Material 3 UI** with dynamic colors & dark mode support
+* 🎨 **Material 3 UI** with dynamic colors, animations, & dark mode support
 * 📦 **Product Flavors** – `dev`, `staging`, and `prod`
+* 🔒 **Secure Configuration** - API keys properly managed via `local.properties` & `BuildConfig`
 * 🧪 **Robust Unit Testing** for ViewModels and Repositories
 
 ## 🏛️ Architecture Overview
@@ -52,10 +54,13 @@ UI (Jetpack Compose)
 </p>
 
 ### Tools & Libraries
-* **JUnit 4** – Unit testing framework
-* **Turbine** – Flow and StateFlow testing
-* **kotlinx‑coroutines‑test** – Coroutine control
-* **MockK** – Minimal mocking where required
+* **Jetpack Compose** – Modern UI toolkit
+* **Firebase Vertex AI** – For on-device smart Gemini integration
+* **Hilt** – Dependency Injection
+* **Retrofit / OkHttp** – Networking
+* **Room** – Local caching
+* **Coil** – Image loading
+* **JUnit 4 / Turbine / MockK** – Unit testing framework
 
 ### Testing Approach
 
@@ -65,11 +70,19 @@ UI (Jetpack Compose)
 
 ## 🚀 Getting Started
 
-### 1. Obtain API Key
+### 1. Prerequisites
+You need two API keys for this project to fully work:
+1. **NewsAPI Key:** Get one at [https://newsapi.org](https://newsapi.org)
+2. **Firebase Setup:** Connect the app to Firebase and set up Vertex AI to enable the Gemini summary features.
 
-* Register at [https://newsapi.org](https://newsapi.org)
-* Add your API key to the appropriate `local.properties` or build config
+### 2. Configuration
+Create a `local.properties` file in the root directory (if it doesn't exist) and add your NewsAPI key:
+```properties
+NEWS_API_KEY="YOUR_API_KEY_HERE"
+```
+Place your `google-services.json` inside the `app/` directory.
 
+### 3. Running tests
 ```bash
 # Run all unit tests
 ./gradlew test

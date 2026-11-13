@@ -1,7 +1,7 @@
 package com.portfolio.newsapp.di
 
 import android.content.Context
-import com.portfolio.newsapp.data.repository.NewsRepository
+import com.portfolio.newsapp.domain.repository.NewsRepository
 import com.portfolio.newsapp.data.repository.NewsRepositoryImpl
 import dagger.Binds
 import dagger.Module

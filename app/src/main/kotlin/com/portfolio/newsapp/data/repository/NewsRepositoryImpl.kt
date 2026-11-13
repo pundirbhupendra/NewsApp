@@ -7,6 +7,7 @@ import com.portfolio.newsapp.data.mapper.toDomainModel
 import com.portfolio.newsapp.data.mapper.toEntity
 import com.portfolio.newsapp.data.remote.NewsApiService
 import com.portfolio.newsapp.domain.model.Article
+import com.portfolio.newsapp.domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.firstOrNull

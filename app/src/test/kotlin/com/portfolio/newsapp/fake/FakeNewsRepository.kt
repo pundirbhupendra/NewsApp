@@ -1,6 +1,6 @@
 package com.portfolio.newsapp.fake
 
-import com.portfolio.newsapp.data.repository.NewsRepository
+import com.portfolio.newsapp.domain.repository.NewsRepository
 import com.portfolio.newsapp.domain.model.Article
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

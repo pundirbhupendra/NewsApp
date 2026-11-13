@@ -1,4 +1,4 @@
-package com.portfolio.newsapp.data.repository
+package com.portfolio.newsapp.domain.repository
 
 import com.portfolio.newsapp.domain.model.Article
 import kotlinx.coroutines.flow.Flow
