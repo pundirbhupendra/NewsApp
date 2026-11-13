@@ -4,9 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.portfolio.newsapp.ui.navigation.NewsNavigation
-import com.portfolio.newsapp.ui.theme.NewsAppTheme
+import com.portfolio.newsapp.navigation.NewsNavigation
+import com.portfolio.newsapp.core.theme.NewsAppTheme
 import dagger.hilt.android.AndroidEntryPoint
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
