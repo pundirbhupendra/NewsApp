@@ -150,7 +150,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Firebase AI
+    // Firebase AI & App Check
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.vertexai)
+    implementation(libs.firebase.appcheck.playintegrity)
+    debugImplementation(libs.firebase.appcheck.debug)
 }
